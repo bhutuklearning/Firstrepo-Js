@@ -1,0 +1,15 @@
+Js mein kai saari features h aur jo features nhi h usse bhi usse bhi hum use kar patte hai kyunki wo features
+ js language use kar leti hai window se, aur window hai ek box of features given by the browser to use with Js.
+
+ Like alert, prompt, console are not the part of the javascript.
+ Go and type window in the console(ctrl+shift+j) of the browser and you will get to know about the features that window contains.
+
+ Execution Context is a container where function's code is executed and it is always created whenever a function is called. 
+ It contains three things variables, functions and lexical environment.
+ Lexical environment contains scope and its chain.
+ Lexical Environment hota hai ek chart jismein likha hota h ki aapka particular function ke kin chezzo ko access kar sakta h aur kinko nahi, 
+ matlab it holds it's scope and scope chain.
+
+ Js mein kuch bhi likho wo mainly do prakar mein se kisi ek prakar ko belong karta hai.
+ //Falsy values ye hai :- 0, false, undefined, null, NaN, document.all// ye sari value false hoti h js mein.//NaN-Not a Number
+ //Truthy
