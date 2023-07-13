@@ -49,3 +49,29 @@ console.table([typeof myFunction, typeof scoreValue, typeof obj, typeof heroes])
 
 //For further reading
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//-------++++++++**************
+// Memories
+// There are two types of memories :- Stack{Primitive} and Heap{Non-primitive or Reference}
+
+//Incase of primitive type stack memory is used.
+//Incase of non-primitive or reference type heap memory is used.
+
+//Static Memory example
+let mygitaccount = "bhutuklearning";
+let anotherName = mygitaccount ;
+anotherName = "gitandgithub";
+
+console.log(mygitaccount);
+console.log(anotherName);
+
+//Heap Memory example(which uses references)
+let userOne ={
+    email: "email@email.com",
+    upi: "user@ybl",
+}
+
+let userTwo = userOne;
+userTwo.email = "email2@email.com" ;
+console.log(userOne.email);
+console.log(userTwo.email);
