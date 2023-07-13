@@ -41,6 +41,7 @@ myFunction();
 //using "typeof" function
 console.log(typeof bigNumber);
 console.log(typeof Temp);
+console.log(typeof id);
 const hii = undefined ;
 console.log(typeof hii);
 console.log(typeof undefined);
