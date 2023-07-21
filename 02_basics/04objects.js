@@ -59,3 +59,42 @@ console.log(Object.entries(tinderuser));
 
 console.log(tinderuser.hasOwnProperty('isLoggedIn'));
 console.log(tinderuser.hasOwnProperty('isLogged'));
+
+//++++Object De-Structure++++
+const course = {
+    coursename : "Js in Hindi",
+    price: "999",
+    courseInstructor : "Hitesh Choudhary",
+}
+
+//course.courseInstructor
+//Another method to print the properties of the array.
+const {courseInstructor} = course;
+const {courseInstructor: Instructor} = course;
+console.log(courseInstructor);
+console.log(Instructor);
+
+//In React
+// const navbar = ({company}) => {
+
+// }
+// navbar(company = "Bhutuk");
+
+//API-Application Programming Interfece:-> introduction
+//Json Api
+// {
+//     "name" :"Bhutuk",
+//     "courseName" : "Js in Hindi",
+//     "price": "free,"
+// }
+
+//Go and type this https://api.github.com/users/bhutuklearning to know more about API.
+
+//Sometimes API can be in array form rather than in object form.
+
+[
+    {},
+    {},
+    {}
+]
+//go and type random user me api
