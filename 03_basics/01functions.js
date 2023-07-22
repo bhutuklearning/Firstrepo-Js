@@ -29,3 +29,35 @@ function loginUserMessage(username) {
 }
 console.log(loginUserMessage("Bhutuk"));
 console.log(loginUserMessage());
+
+//++++Function Part Two++++++
+//...rest operator and spread operator.
+//Now ... is a rest operator.
+function calculateCartPrice(...num1) {
+    return num1;
+}
+console.log(calculateCartPrice(300, 400, 620));
+
+const user = {
+    username: "Bhutuk",
+    price : 700,
+}
+
+function handleObject(anyObject) {
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+handleObject(user);
+handleObject({
+    username: "Sammy",
+    price: 650,
+});
+
+const myNewArray = [120, 350, 480, 510];
+
+function handleArray(getArray) {
+    return getArray[2];
+}
+
+console.log(handleArray(myNewArray));
+console.log(handleArray([74, 229, 321, 463]));
