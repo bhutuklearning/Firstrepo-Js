@@ -44,3 +44,24 @@ if( balance>500) console.log("Test");//Implicit scopes
 if( balance>650) console.log("Test001"),console.log("Test002");//Suggestion: don't use this practice.
 
 //++++Nesting+++++
+if(balance<500){
+    console.log("Balance is less than 500");
+}
+else if(balance<800) {
+    console.log("Balance is less than 800");
+}
+else if(balance<1100){
+    console.log("Balance is less than 1100");
+}
+
+const userLoggedIn = true ;
+const debitCard = true ;
+const loggedInfromGoogle = false;
+const loggedInfromEmail = true ;
+
+if(userLoggedIn && debitCard) {
+    console.log("Allowed to purchase.");
+}
+if(loggedInfromGoogle || loggedInfromEmail) {
+    console.log(`User logged in.`);
+}
