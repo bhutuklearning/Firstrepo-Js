@@ -65,3 +65,5 @@ if(userLoggedIn && debitCard) {
 if(loggedInfromGoogle || loggedInfromEmail) {
     console.log(`User logged in.`);
 }
+
+// &&(and) and ||(or) are logical operators.
