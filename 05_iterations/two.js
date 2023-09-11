@@ -1,5 +1,5 @@
 //While loop
-
+//Experimenting after a long time
 let u = 1;
 while(u<=10) {
     console.log(`Value of i is ${u}`);
