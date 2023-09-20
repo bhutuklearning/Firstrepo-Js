@@ -1,0 +1,27 @@
+<!-- Creating an element/Div in DOM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+const div1 = document.createElement('div');
+console.log(div1);
+div1.className = "main";
+div1.id = "myId";
+div1.className = Math.floor(Math.random() *10);
+div1.setAttribute("title", "generated Title");
+
+div1.style.backgroundColor = "blue";
+div1.style.padding = "12px";
+
+const addText = document.createTextNode("Chai aur code");
+div1.appendChild(addText);
+document.body.appendChild(div1);
+</script>
+</html>
