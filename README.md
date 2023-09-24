@@ -10,3 +10,4 @@ Restarting on 19th of September, part 34 of 50 is going is right now. Now I have
 23rd of September, I am starting project video of JS from Hitesh Choudhary playlists. This video is 35/50 of the playlist. Important Websites to pay attention:- 
 1) codesandbox.io
 2) stackblitz.com
+Now After completing the project video on 23rd September evening, I will start learning events which is 36/50 video of the Playlist.
