@@ -46,7 +46,7 @@ console.log("1" + 2);
 console.log(1+"2");
 console.log("1"+2+2);//string pehle hai to pehle hi string mein convert kar diya jayega for reference go to ECMA script.
 console.log(1+2+"2");
-
+console.log(typeof(1+2+"2"));
 //Don't write confusing as well as messy codes.
 console.log( (3+4)*5 % 3);
 console.log(true, +true, +"");// not recommended
