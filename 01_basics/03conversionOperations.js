@@ -63,3 +63,11 @@ console.log(gameCounter);
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
 
 //go and search about prefix and postfix js mdn
+
+//26/11/23:-> Just New findings to check out for.
+
+console.log(1+2+null);
+console.log(1+2+undefined)
+console.log(typeof(1+2+null));
+console.log(typeof(1+2+undefined));
+
