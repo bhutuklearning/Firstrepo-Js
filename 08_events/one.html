@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing Image</h2>
+    <div>
+        <ul id="images">
+            <li><img id="photoshop" width="200px" src="https://images.unsplash.com/photo-1701937189060-8b87985d85e1?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photoshop"> </li>
+            <li><img id="japan" width="200px" src="https://images.unsplash.com/photo-1704026437902-699fa6a8c98d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8" alt=""> </li>
+            <li><img id="river" width="200px" src="https://images.unsplash.com/photo-1704024213027-c3555991bc63?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> </li>
+            <li><img id="owl" width="200px" src="https://images.unsplash.com/photo-1703446592359-fefe8472cc79?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+            <li><img id="prayer" width="200px" src="https://images.unsplash.com/photo-1703606107615-149b798c8560?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3OHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.querySelector("#owl").onclick = function(){
+    //     alert("You Clicked Owl.");
+    // } //Not Recommended while scaling.
+
+    //Attach Event() //Earlier Times, like:- Internet Explorer
+    //Jquery - onevent listener
+
+  
+    //e is an event object
+    //You will find two types of event, one is browser and another is environment.
+   
+    //Important concepts to cover
+    //Type, Timestamp, defaultPrevented
+    //Target, toElement, srcElement, CurrentTarget
+    //clientX, clientY, screenX, screenY, tiltX, tiltY
+    //altKey, ctrlKey, shiftKey, keycode
+
+    // document.querySelector("#owl").addEventListener(
+    //     'click', function(e) {
+    //         // alert("You Clicked an owl.")
+    //         alert(e);
+    //         console.log(e);
+    //     }, false // Default
+    // );
+
+    // document.querySelector("#images").addEventListener('click', function(e){
+    //     console.log("Clicked inside the Ul.");
+    // }, false); // Change the true to false and observe the action in console.
+
+    // document.querySelector("#owl").addEventListener('click', function(e){
+    //     console.log("Owl clicked.");
+    // }, false);
+
+    // document.querySelector("#prayer").addEventListener('click', function(e){
+    //     console.log("Prayer clicked.");
+    //     e.stopPropagation();
+    // }, false);
+
+    // document.querySelector("#google").addEventListener('click', function(e){
+    //     console.log("google Clicked.");
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    // }, false);
+
+
+
+    //Event Progation has two context-> Event Bubbling (False) and Event Capturing(True)
+    //Ep-> which is the third Parameter:-> True and False
+    
+    document.querySelector("#images").addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeImg = e.target.parentNode;
+            removeImg.remove();
+        }
+        // console.log(e.target.parentNode);
+        // let removeIt = e.target.parentNode;
+        // removeIt.remove();
+        //removeIt.parentNode.removeChild(removeIt);
+    }, false);
+    
+
+</script>
+</html>
