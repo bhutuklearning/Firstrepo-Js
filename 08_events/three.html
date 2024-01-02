@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Js</title>
+</head>
+<body>
+    <h1>Chai aur JavaScript</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+    <!-- SetInterval has third interval also. -->
+</body>
+<script>
+   const sayDate = function(str) {
+    console.log(str, Date.now());
+   }
+
+   let intervalId;
+
+   document.querySelector("#start").addEventListener('click', function(){
+     intervalId = setInterval(sayDate, 1000, "Hi");
+   });
+
+   document.querySelector("#stop").addEventListener('click', function(){
+    clearInterval(intervalId);
+    console.log("Stopped at ", Date.now());
+   });
+   
+</script>
+</html>
