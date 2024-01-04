@@ -12,3 +12,5 @@ Restarting on 19th of September, part 34 of 50 is going is right now. Now I have
 2) stackblitz.com
 
 Now After completing the project video on 23rd September evening, I will start learning events which is 36/50 video of the Playlist.
+
+Starting Object Oriented Programming in Js which 42/51 video of the playlists.
